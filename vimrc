@@ -16,7 +16,10 @@ set smartcase           " be sensitive when there's a capital letter
 set incsearch           " Do incremental searching
 " Backup & undo
 set nowritebackup
+set noswapfile
 set nobackup
+
+highlight clear SignColumn
 
 " Paste without replace
 xnoremap p pgvy
