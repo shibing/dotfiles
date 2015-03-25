@@ -35,6 +35,9 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 
+Plugin 'edkolev/tmuxline.vim'
+
+Plugin 'jimenezrick/vimerl'
 Plugin 'majutsushi/tagbar'
 
 Plugin 'Shougo/vimproc.vim'
@@ -135,7 +138,7 @@ endif
 
 Plugin 'scrooloose/syntastic'
 let g:syntastic_check_on_open=1
-let g:syntastic_phpcs_conf = "--tab-width=4 --standard=CodeIgniter"
+"let g:syntastic_phpcs_conf = "--tab-width=4 --standard=CodeIgniter"
 
 " Plugin 'mileszs/ack.vim'
 " Plugin 'vim-scripts/nerdtree-ack'
