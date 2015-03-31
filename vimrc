@@ -83,6 +83,7 @@ Plugin 'bling/vim-airline'
 let g:airline_powerline_fonts = 1
 
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'tpope/vim-surround'
 
 Plugin 'scrooloose/nerdtree'
 let NERDTreeShowHidden=1
@@ -135,6 +136,7 @@ smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
 if has('conceal')
   set conceallevel=2 concealcursor=i
 endif
+Plugin 'Shougo/neosnippet-snippets'
 
 Plugin 'scrooloose/syntastic'
 let g:syntastic_check_on_open=1
