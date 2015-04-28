@@ -36,6 +36,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'edkolev/tmuxline.vim'
+Plugin 'altercation/vim-colors-solarized'
 
 Plugin 'jimenezrick/vimerl'
 Plugin 'majutsushi/tagbar'
@@ -189,7 +190,9 @@ set cindent
 set cinoptions=:s,ps,ts,cs
 set cinwords=if,else,while,do,for,switch,case
 
-syntax on
+syntax enable
+
+
 
 filetype plugin indent on " Automatically detect file types
 " }}}
