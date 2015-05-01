@@ -199,6 +199,8 @@ filetype plugin indent on " Automatically detect file types
 set showcmd       " Display incomplete commands
 set cursorline    " Highlight the current line
 set cursorcolumn
+hi CursorLine cterm=NONE ctermbg=236  ctermfg=NONE gui=NONE guibg=#2d2d2d guifg=NONE
+hi CursorColumn cterm=NONE ctermbg=236  ctermfg=NONE gui=NONE guibg=#2d2d2d guifg=NONE
 set laststatus=2
 
 " list setting
