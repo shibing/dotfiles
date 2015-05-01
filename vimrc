@@ -5,7 +5,6 @@ set hidden              " Open a new file using :e,
 set encoding=utf-8
 set history=256         " Number of things to remember in history
 set timeoutlen=250      " Time to wait after ESC (default causes an annoying delay)
-set clipboard=unnamed   " Yanks go on clipboard instead
 set t_Co=256
 set lazyredraw          " Don't redraw while executing macros (good performance config)
 " Match & search
@@ -21,9 +20,6 @@ set nobackup
 
 highlight clear SignColumn
 
-" Paste without replace
-xnoremap p pgvy
-
 autocmd! bufwritepost .vimrc source %
 " }}}
 
@@ -36,7 +32,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'edkolev/tmuxline.vim'
-Plugin 'altercation/vim-colors-solarized'
+"Plugin 'altercation/vim-colors-solarized'
 
 Plugin 'jimenezrick/vimerl'
 Plugin 'majutsushi/tagbar'
@@ -125,7 +121,9 @@ autocmd FileType make setlocal noexpandtab
 " Enable heavy omni completion.
 if !exists('g:neocomplete#sources#omni#input_patterns')
   let g:neocomplete#sources#omni#input_patterns = {}
-endif
+endif"
+
+Plugin 'violetyk/neocomplete-php.vim'
 
 Plugin 'Shougo/neosnippet.vim'
 imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
@@ -200,6 +198,7 @@ filetype plugin indent on " Automatically detect file types
 " Visual {{{
 set showcmd       " Display incomplete commands
 set cursorline    " Highlight the current line
+set cursorcolumn
 set laststatus=2
 
 " list setting
