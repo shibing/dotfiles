@@ -9,7 +9,7 @@ set t_Co=256
 set lazyredraw          " Don't redraw while executing macros (good performance config)
 " Match & search
 set number
-set hlsearch            " Highlight search
+"set hlsearch            " Highlight search
 set ignorecase          " Do case in sensitive matching with
 set smartcase           " be sensitive when there's a capital letter
 set incsearch           " Do incremental searching
@@ -196,6 +196,7 @@ filetype plugin indent on " Automatically detect file types
 " }}}
 
 " Visual {{{
+colorscheme desert
 set showcmd       " Display incomplete commands
 set cursorline    " Highlight the current line
 set cursorcolumn
