@@ -32,7 +32,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'edkolev/tmuxline.vim'
-"Plugin 'altercation/vim-colors-solarized'
+Plugin 'altercation/vim-colors-solarized'
 
 Plugin 'jimenezrick/vimerl'
 Plugin 'majutsushi/tagbar'

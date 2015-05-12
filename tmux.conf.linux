@@ -24,6 +24,7 @@ bind-key l select-pane -R
 #status bar
 set-option -g status-left "S#S:W#I.P#P#[default]"
 set-option -g status-utf8 on
+set -t status-interval 60
  
 #mouse
 set-option -g mouse-select-pane on
